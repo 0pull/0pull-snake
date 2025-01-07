@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра Змейка</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Картинка 1280x469 пикселей -->
+  <div class="image-container">
+    <img src="SASA1.jpg" alt="Картинка для игры">
+  </div>
+
+  <!-- Счетчик очков -->
+  <div class="score-container">
+    <h1 id="score">Очки: 0</h1>
+  </div>
+
+  <!-- Игровое поле -->
+  <div class="game-container">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <!-- Кнопки управления для телефона -->
+  <div class="controls">
+    <button id="up">↑</button>
+    <div class="horizontal-buttons">
+      <button id="left">←</button>
+      <button id="down">↓</button>
+      <button id="right">→</button>
+    </div>
+  </div>
+
+  <!-- Контейнер для специального кода -->
+  <div id="special-code" class="hidden">
+    <p>Поздравляем! Ваш код: <strong>184172PULL65</strong></p>
+  </div>
+
+  <div id="game-over" class="hidden">
+    <h1>Игра окончена!</h1>
+    <button id="restart">Начать заново</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

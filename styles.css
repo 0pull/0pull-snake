@@ -1,0 +1,102 @@
+/* Общий стиль */
+body {
+  background-color: black;
+  color: #0000e0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+}
+
+.score-container {
+  margin: 20px 0;
+}
+
+.game-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  background-color: black;
+  border: 3px solid #0000e0;
+}
+
+/* Кнопки управления */
+.controls {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: #0000e0;
+  color: black;
+  border: none;
+  padding: 15px 20px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0000a0;
+}
+
+.horizontal-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Скрытый контейнер для кода */
+.hidden {
+  display: none;
+}
+
+#special-code {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #0000e0;
+}
+
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: #0000e0;
+  border: 3px solid #0000e0;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+
+#game-over.hidden {
+  display: none;
+}
+
+#game-over button {
+  background-color: #0000e0;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#game-over button:hover {
+  background-color: #0000a0;
+}
