@@ -65,7 +65,7 @@ function updateGame() {
   // Проверка на поедание еды
   if (head.x === food.x && head.y === food.y) {
     score++;
-    scoreDisplay.innerText = `Очки: ${score}`;
+    scoreDisplay.innerText = `points: ${score}`;
     food = generateFood();
 
     // Показываем секретный код при 10 очках
