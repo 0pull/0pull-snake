@@ -101,7 +101,7 @@ function restartGame() {
   scoreDisplay.innerText = `Очки: ${score}`;
   gameOverScreen.classList.add("hidden");
   specialCode.classList.add("hidden");
-  gameStarted = true; // Устанавливаем флаг, что игра началась
+  gameStarted = false; // Устанавливаем флаг, что игра началась
   gameInterval = setInterval(updateGame, 100); // Перезапуск игрового цикла
 }
 
