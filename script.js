@@ -98,7 +98,7 @@ function restartGame() {
   direction = null;
   food = generateFood();
   score = 0;
-  scoreDisplay.innerText = `Очки: ${score}`;
+  scoreDisplay.innerText = `press any button`;
   gameOverScreen.classList.add("hidden");
   specialCode.classList.add("hidden");
   gameStarted = false; // Устанавливаем флаг, что игра началась
